@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         class quitGame implements View.OnClickListener{
+            //Quit button
             Button quitButton = findViewByID(R.id.button);
 
             @Override
