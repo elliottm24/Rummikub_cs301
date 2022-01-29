@@ -15,21 +15,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView timer = (TextView)findViewById(R.id.textView);
+        //TextView timer = (TextView)findViewById(R.id.textView);
 
-        new CountDownTimer(3000,1000) {
 
-            @Override
-            public void onTick(long l) {
-                textTimer.setText("0:" + checkNum(time));
-                time--;
-            }
+        //new CountDownTimer(3000,1000) {
 
-            @Override
-            public void onFinish() {
-                textTimer.setText("Time's up");
-            }
-        }.start();
+        //    @Override
+        //    public void onTick(long millisUntilFinished) {
+        //        textTimer.setText("0:" + checkNum(time));
+        //        time--;
+        //    }
+
+        //    @Override
+        //    public void onFinish() {
+        //        textTimer.setText("Time's up");
+        //    }
+        //}.start();
 
         //public String checkNum(int num) {
         //    return num <= 9 ? "0" + num : String.valueOf(num);

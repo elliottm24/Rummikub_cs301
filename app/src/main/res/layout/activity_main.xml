@@ -20,7 +20,8 @@
                 android:id="@+id/textView"
                 android:layout_width="53dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:text="Time: 20s"/>
 
             <View
                 android:id="@+id/view"
