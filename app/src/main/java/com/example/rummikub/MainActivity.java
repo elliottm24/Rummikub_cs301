@@ -13,15 +13,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        class quitGame implements View.OnClickListener{
-            //Quit button
-            Button quitButton = findViewByID(R.id.button);
 
+        Button qButton = (Button) findViewById(R.id.button);
+        qButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View button) {
+            public void onClick(View view) {
                 finish();
                 System.exit(0);
             }
-        }
+        });
     }
 }
