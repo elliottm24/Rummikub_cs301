@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+        //Cite later: https://www.youtube.com/watch?v=Yx63M4k-EeE
         Button qButton = (Button) findViewById(R.id.button);
         qButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -22,5 +22,6 @@ public class MainActivity extends AppCompatActivity {
                 System.exit(0);
             }
         });
+
     }
 }
