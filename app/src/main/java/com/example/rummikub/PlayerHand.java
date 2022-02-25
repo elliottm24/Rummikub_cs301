@@ -1,8 +1,8 @@
 package com.example.rummikub;
 
-/*
-@authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmestede
- */
+/**
+ *@authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmestede
+ * */
 
 public class PlayerHand extends Tile {
     private int p_id;

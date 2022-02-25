@@ -2,9 +2,9 @@ package com.example.rummikub;
 
 import java.util.ArrayList;
 
-/*
-@authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmestede
- */
+/**
+ *@authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmestede
+ * */
 
 public class GameState {
 
@@ -31,7 +31,10 @@ public class GameState {
     public GameState() {
         int timer = 100;
         int scores = 0;
-        int turn = 0;
+        int curr_turn = 0;
+        Tile[] t_pile = new Tile[];
+        Tile[][] t_board = new Tile[][];
+
 
     }
 
