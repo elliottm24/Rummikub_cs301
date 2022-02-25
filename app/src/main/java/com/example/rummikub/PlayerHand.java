@@ -17,4 +17,14 @@ public class PlayerHand extends Tile {
         this.p_id     = orig.p_id;
         this.hand     = orig.hand;
     }
+
+    @Override
+    public String toString(){
+
+        String str_hand;
+
+        for(int i = 0; i < hand.length; i++) {
+            str_hand +=
+        }
+    }
 }
