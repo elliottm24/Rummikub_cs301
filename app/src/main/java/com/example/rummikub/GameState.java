@@ -47,6 +47,9 @@ public class GameState {
 
         System.out.println("~~ Current Game Info ~~\n");
 
+        System.out.println("Currently Player " + curr_turn + "'s Turn");
+        System.out.println("Timer: " + timer + "s\n");
+
         System.out.println("Player 1 Hand: ");
         for (int i = 0; i < player1_hand.size(); i++) {
             System.out.println(player1_hand.get(i));
