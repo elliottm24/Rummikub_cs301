@@ -32,9 +32,6 @@ public class GameState {
         int timer = 100;
         int scores = 0;
         int turn = 0;
-        //int Array[][] inPlay = [][];
-        //ArrayList<> drawPile = new ArrayList();
-        //int Array[][] playable = [][];
 
     }
 
