@@ -17,8 +17,15 @@ public class GameState {
 
     }
 
+
     @Override
     public String toString() {
         return "GameState{}";
     }
+
+    public boolean drawTile(){
+        return false;
+    }
+
+
 }
