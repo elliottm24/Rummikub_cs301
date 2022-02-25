@@ -24,8 +24,15 @@ public class GameState {
     private int curr_turn;
     private int timer;
     private Player[] players;
-    private Tile[]   t_pile;
+    //private Tile[]   t_pile;
     private Tile[][] t_board;
+
+    //These are the player hands
+    private ArrayList<Tile> player1_hand = new ArrayList<Tile>();
+    private ArrayList<Tile> player2_hand = new ArrayList<Tile>();
+
+    //This is the pile of tiles the players are gonna draw from
+    private ArrayList<Tile> tile_pile = new ArrayList<Tile>();
 
 
     public GameState() {
@@ -45,6 +52,7 @@ public class GameState {
     }
 
     public boolean drawTile(){
+        if(turn)
         return false;
     }
 
