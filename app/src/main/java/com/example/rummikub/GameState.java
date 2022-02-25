@@ -40,6 +40,15 @@ public class GameState {
         timer = 100;
 
     }
+    //Copy Constructor I don't know if it's deep copy since the ArrayList aren't fully instantiated
+    public GameState(GameState copy){
+        this.curr_turn = copy.getCurr_turn();
+        this.timer = copy.getTimer();
+        this.player1_hand = copy.getPlayer2_hand();
+        this.player2_hand = copy.getPlayer2_hand();
+        this.t_pile = copy.getT_pile();
+
+    }
 
     @Override
     public String toString() {
@@ -118,6 +127,56 @@ public class GameState {
             curr_turn =0;
             return;
         }
+    }
+
+
+    //Getters and Setters
+    public int getCurr_turn() {
+        return curr_turn;
+    }
+
+    public void setCurr_turn(int curr_turn) {
+        this.curr_turn = curr_turn;
+    }
+
+    public int getTimer() {
+        return timer;
+    }
+
+    public void setTimer(int timer) {
+        this.timer = timer;
+    }
+
+    public ArrayList<Tile> getPlayer1_hand() {
+        return player1_hand;
+    }
+
+    public void setPlayer1_hand(ArrayList<Tile> player1_hand) {
+        this.player1_hand = player1_hand;
+    }
+
+    public ArrayList<Tile> getPlayer2_hand() {
+        return player2_hand;
+    }
+
+    public void setPlayer2_hand(ArrayList<Tile> player2_hand) {
+        this.player2_hand = player2_hand;
+    }
+
+    public ArrayList<Tile> getT_board() {
+        return t_board;
+    }
+
+    public void setT_board(ArrayList<Tile> t_board) {
+        this.t_board = t_board;
+    }
+
+    public ArrayList<Tile> getT_pile() {
+        return t_pile;
+    }
+
+    public void setT_pile(ArrayList<Tile> t_pile) {
+        this.t_pile = t_pile;
     }
 
 
