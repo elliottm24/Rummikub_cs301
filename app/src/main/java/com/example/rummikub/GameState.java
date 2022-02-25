@@ -51,10 +51,51 @@ public class GameState {
         return "GameState{}";
     }
 
-    public boolean drawTile(){
-        if(turn)
+
+    //Checks if either player hand is empty. This should be called at the end of each turn
+    public boolean isWin(){
+        if(player1_hand.isEmpty()){
+            //The print line is just a placeholder, the method should change the screen to reflect who's won the game
+            System.out.println("Player 1 has won the game!");
+            return true;
+        }
+        if(player2_hand.isEmpty()){
+            System.out.println("Player 2 has won the game");
+        }
+        //If neither player hand is empty then the game continues
         return false;
     }
+
+    //This action should draw tile for the current player. This tile will be taken from the tile pile and added to the current players hand
+    public boolean drawTile(){
+        if (curr_turn == 0){
+            //Add tile from tile pile to player_0's hand
+            //Remove this tile from tile pile
+            changeTurn();
+            return true;
+        }
+        if(curr_turn == 1){
+            //Add tile from tile pile to player_1's hand
+            //Remove this tile from tile pile
+            changeTurn();
+            return true;
+        }
+        return false;
+
+    }
+
+    // Helper method to change the turn of the player
+    public void changeTurn(){
+        if (curr_turn == 0){
+            curr_turn = 1;
+            return;
+        }
+        if (curr_turn == 1){
+            curr_turn =0;
+            return;
+        }
+    }
+
 
 
 }
