@@ -1,7 +1,7 @@
 package com.example.rummikub;
 
 /**
- *@authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmstede
+ * @authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmstede
  * */
 
 public class Tile {
@@ -12,12 +12,21 @@ public class Tile {
         this.color = initColor;
         this.tileNum = initTileNum;
     }
-    /*
-    public Tile(Tile orig) {
-        this.color = orig.color;
-        this.tileNum = orig.tileNum;
+
+    public Tile() {
     }
-    */
+
+    /**
+     * For some reason Dylan made a deep copy ctor for Tile
+     * May delete later?
+     *
+     *     public Tile(Tile orig) {
+     *         this.color = orig.color;
+     *         this.tileNum = orig.tileNum;
+     *     }
+     *
+    **/
+
     @Override
     public String toString() {
         return color + " " + tileNum;

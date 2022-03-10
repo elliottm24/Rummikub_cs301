@@ -1,9 +1,10 @@
 package com.example.rummikub;
 
+import androidx.annotation.NonNull;
 import java.util.ArrayList;
 
 /**
- *@authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmstede
+ * @authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmstede
  * */
 
 public class PlayerHand extends Tile {
@@ -20,15 +21,16 @@ public class PlayerHand extends Tile {
         this.hand     = orig.hand;
     }
 
+    @NonNull
     @Override
     public String toString(){
 
-        String str_hand = "";
+        StringBuilder str_hand = new StringBuilder();
 
         for(int i = 0; i < hand.size(); i++) {
-            str_hand += hand.get(i) + "\n";
+            str_hand.append(hand.get(i)).append("\n");
         }
 
-        return str_hand;
+        return str_hand.toString();
     }
 }
