@@ -6,14 +6,15 @@ import java.util.ArrayList;
  *@authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmstede
  * */
 
+
 public class PlayerHand extends Tile {
     public int p_id;
     public ArrayList<Tile> hand;
 
-    //Copy constructor for PlayerHand
-    public PlayerHand(int init_id, ArrayList<Tile> init_hand) {
-        this.p_id     = init_id;
-        this.hand     = init_hand;
+    //constructor for PlayerHand
+    public PlayerHand() {
+        this.p_id     = 0;
+        this.hand     = null;
     }
 
     //Deep copy constructor for PlayerHand
