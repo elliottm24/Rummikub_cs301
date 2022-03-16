@@ -10,11 +10,13 @@ public class PlayerHand extends Tile {
     public int p_id;
     public ArrayList<Tile> hand;
 
+    //Copy constructor for PlayerHand
     public PlayerHand(int init_id, ArrayList<Tile> init_hand) {
         this.p_id     = init_id;
         this.hand     = init_hand;
     }
 
+    //Deep copy constructor for PlayerHand
     public PlayerHand(PlayerHand orig) {
         this.p_id     = orig.p_id;
         this.hand     = orig.hand;

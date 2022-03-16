@@ -32,7 +32,7 @@ public class GameState {
     private ArrayList<Tile> t_board = new ArrayList<Tile>();
 
     //This is the pile of tiles the players are gonna draw from
-    private ArrayList<Tile> t_pile = new ArrayList<Tile>();
+    private ArrayList<Tile> tile_pile = new ArrayList<Tile>();
 
 
     public GameState() {
@@ -46,7 +46,7 @@ public class GameState {
         this.timer = copy.getTimer();
         this.player1_hand = copy.getPlayer2_hand();
         this.player2_hand = copy.getPlayer2_hand();
-        this.t_pile = copy.getT_pile();
+        this.tile_pile = copy.getT_pile();
 
     }
 
@@ -77,8 +77,8 @@ public class GameState {
 
         System.out.println("");
         System.out.println("Tiles in Pile: ");
-        for (int i = 0; i < t_pile.size(); i++) {
-            System.out.println(t_pile.get(i));
+        for (int i = 0; i < tile_pile.size(); i++) {
+            System.out.println(tile_pile.get(i));
         }
 
         return null;
@@ -172,11 +172,11 @@ public class GameState {
     }
 
     public ArrayList<Tile> getT_pile() {
-        return t_pile;
+        return tile_pile;
     }
 
     public void setT_pile(ArrayList<Tile> t_pile) {
-        this.t_pile = t_pile;
+        this.tile_pile = tile_pile;
     }
 
 
