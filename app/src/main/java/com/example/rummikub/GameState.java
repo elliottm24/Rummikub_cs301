@@ -4,6 +4,11 @@ import java.util.ArrayList;
 
 /**
  *@authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmestede
+ *
+ * (description here)
+ *
+ * Bugs:
+ *
  * */
 
 public class GameState {

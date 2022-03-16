@@ -10,6 +10,11 @@ import android.widget.TextView;
 
 /**
  *@authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmestede
+ *
+ * (Description here)
+ *
+ * Bugs:
+ *
  * */
 
 public class MainActivity extends AppCompatActivity {

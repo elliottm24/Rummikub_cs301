@@ -3,7 +3,12 @@ package com.example.rummikub;
 import java.util.ArrayList;
 
 /**
- *@authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmstede
+ *@authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmestede
+ *
+ * Handles all the data that has to do with a player's hand
+ *
+ * Bugs: Need to fix constructor and deep copy constructor (3/16/2022)
+ *
  * */
 
 

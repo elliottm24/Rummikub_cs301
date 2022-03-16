@@ -1,7 +1,7 @@
 package com.example.rummikub;
 
 /**
- *@authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmstede
+ *@authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmestede
  * */
 
 //Default constructor for Tile
