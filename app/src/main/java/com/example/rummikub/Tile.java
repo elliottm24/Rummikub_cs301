@@ -5,7 +5,7 @@ import android.graphics.Color;
 /**
  *@authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmestede
  *
- * (Description)
+ * (Class Description)
  *
  * Bugs:
  *
