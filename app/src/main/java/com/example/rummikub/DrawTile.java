@@ -8,7 +8,7 @@ import android.util.AttributeSet;
 import android.view.SurfaceView;
 
 /**
- *@authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmestede
+ *@authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmstede
  *
  * This class is designed to draw our Rummikub tiles.
  *

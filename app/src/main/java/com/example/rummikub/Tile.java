@@ -3,7 +3,7 @@ package com.example.rummikub;
 import android.graphics.Color;
 
 /**
- *@authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmestede
+ *@authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmstede
  *
  * (Class Description)
  *
@@ -11,10 +11,15 @@ import android.graphics.Color;
  *
  * */
 
-//Default constructor for Tile
 public class Tile {
-    public int color;
-    public int tileNum;
+    private int color;
+    private int tileNum;
+
+    //Default constructor for Tile
+    public Tile(int init_color, int init_tileNum) {
+        this.color = init_color;
+        this.tileNum = init_tileNum;
+    }
 
     //Tile constructor
     public Tile(){
