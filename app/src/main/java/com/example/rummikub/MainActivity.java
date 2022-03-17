@@ -9,8 +9,8 @@ import android.widget.Button;
 import android.widget.TextView;
 
 /**
- *@authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmstede
- *
+ * @authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmstede
+ * @version 3/17/2022
  * (Description here)
  *
  * Bugs:

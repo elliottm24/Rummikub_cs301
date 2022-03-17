@@ -3,7 +3,8 @@ package com.example.rummikub;
 import java.util.ArrayList;
 
 /**
- *@authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmstede
+ * @authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmstede
+ * @version 3/17/2022
  *
  * (description here)
  *

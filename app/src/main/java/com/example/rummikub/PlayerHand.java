@@ -3,7 +3,8 @@ package com.example.rummikub;
 import java.util.ArrayList;
 
 /**
- *@authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmestede
+ * @authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmestede
+ * @version 3/17/2022
  *
  * Handles all the data that has to do with a player's hand
  *
@@ -17,7 +18,7 @@ public class PlayerHand extends Tile {
 
     //constructor for PlayerHand
     public PlayerHand(int init_id) {
-        this.p_id  = init_id;
+        this.p_id = init_id;
         hand = new ArrayList<Tile>();
     }
 

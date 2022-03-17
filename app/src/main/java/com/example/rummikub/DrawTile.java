@@ -8,7 +8,8 @@ import android.util.AttributeSet;
 import android.view.SurfaceView;
 
 /**
- *@authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmstede
+ * @authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmstede
+ * @version 3/17/2022
  *
  * This class is designed to draw our Rummikub tiles.
  *
@@ -45,7 +46,8 @@ public class DrawTile extends SurfaceView {
     }
 
     public void createTile(Canvas c){
-        //Draws the tile
+        //Draws the tile (temp values change later)
+        c.drawRect(100, 100, 100, 100, tilePaint);
     }
 
     public void addNum(Canvas c){

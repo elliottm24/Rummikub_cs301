@@ -3,8 +3,8 @@ package com.example.rummikub;
 import android.graphics.Color;
 
 /**
- *@authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmstede
- *
+ * @authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmstede
+ * @version 3/17/2022
  * (Class Description)
  *
  * Bugs: We have two tile constructors (3/17/2022)
