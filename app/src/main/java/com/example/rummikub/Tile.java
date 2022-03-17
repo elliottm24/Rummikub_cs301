@@ -1,13 +1,26 @@
 package com.example.rummikub;
 
+import android.graphics.Color;
+
 /**
  *@authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmestede
+ *
+ * (Class Description)
+ *
+ * Bugs:
+ *
  * */
 
 //Default constructor for Tile
 public class Tile {
     public int color;
     public int tileNum;
+
+    //Tile constructor
+    public Tile(){
+        this.color = Color.BLACK;
+        this.tileNum = 1;
+    }
 
     //Copy constructor for Tile
     public Tile(Tile orig) {
