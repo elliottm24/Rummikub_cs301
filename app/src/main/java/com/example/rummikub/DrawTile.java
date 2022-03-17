@@ -10,7 +10,7 @@ import android.view.SurfaceView;
 /**
  *@authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmstede
  *
- * This class is designed to draw our Rummikub tiles
+ * This class is designed to draw our Rummikub tiles.
  *
  * Bugs:
  *
@@ -21,13 +21,13 @@ public class DrawTile extends SurfaceView {
     //setting up paints and DrawTileData reference
     public Paint tilePaint = new Paint();
     public Paint numberPaint = new Paint();
-    public DrawTileData info;
+    public Tile info;
 
     //
     public DrawTile(Context context, AttributeSet attrs) {
         super(context, attrs);
 
-        info = new DrawTileData();
+        info = new Tile();
 
         setWillNotDraw(false);
 

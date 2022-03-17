@@ -1,7 +1,14 @@
 package com.example.rummikub;
 
+import android.graphics.Color;
+
 /**
  *@authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmstede
+ *
+ * (Class Description)
+ *
+ * Bugs:
+ *
  * */
 
 public class Tile {
@@ -12,6 +19,12 @@ public class Tile {
     public Tile(int init_color, int init_tileNum) {
         this.color = init_color;
         this.tileNum = init_tileNum;
+    }
+
+    //Tile constructor
+    public Tile(){
+        this.color = Color.BLACK;
+        this.tileNum = 1;
     }
 
     //Copy constructor for Tile
