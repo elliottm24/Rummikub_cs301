@@ -3,7 +3,7 @@ package com.example.rummikub;
 import java.util.ArrayList;
 
 /**
- *@authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmestede
+ *@authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmstede
  *
  * (description here)
  *
@@ -37,7 +37,7 @@ public class GameState {
     private ArrayList<Tile> t_board = new ArrayList<Tile>();
 
     //This is the pile of tiles the players are gonna draw from
-    private ArrayList<Tile> tile_pile = new ArrayList<Tile>();
+    private ArrayList<Tile> t_pile = new ArrayList<Tile>();
 
 
     public GameState() {
@@ -51,42 +51,47 @@ public class GameState {
         this.timer = copy.getTimer();
         this.player1_hand = copy.getPlayer2_hand();
         this.player2_hand = copy.getPlayer2_hand();
-        this.tile_pile = copy.getT_pile();
+        this.t_pile = copy.getT_pile();
 
     }
 
     @Override
     public String toString() {
 
-        System.out.println("~~ Current Game Info ~~\n");
+        String str_player1_hand = "", str_player2_hand = "", str_t_board = "", str_t_pile = "";
 
-        System.out.println("Currently Player " + curr_turn + "'s Turn");
-        System.out.println("Timer: " + timer + "s\n");
-
-        System.out.println("Player 1 Hand: ");
         for (int i = 0; i < player1_hand.size(); i++) {
-            System.out.println(player1_hand.get(i));
+            str_player1_hand += player1_hand.get(i) + "\n";
         }
 
-        System.out.println("");
-        System.out.println("Player 2 Hand: ");
         for (int i = 0; i < player2_hand.size(); i++) {
-            System.out.println(player2_hand.get(i));
+            str_player2_hand += player2_hand.get(i) + "\n";
         }
 
-        System.out.println("");
-        System.out.println("Tiles on Board: ");
         for (int i = 0; i < t_board.size(); i++) {
-            System.out.println(t_board.get(i));
+            str_t_board += t_board.get(i) + "\n";
         }
 
-        System.out.println("");
-        System.out.println("Tiles in Pile: ");
-        for (int i = 0; i < tile_pile.size(); i++) {
-            System.out.println(tile_pile.get(i));
+        for (int i = 0; i < t_pile.size(); i++) {
+            str_t_pile += t_pile.get(i) + "\n";
         }
 
-        return null;
+        String str_return
+
+                = "~~ Current Game Info ~~                      \n\n"
+                + "Currently Player " + curr_turn + "'s Turn    \n"
+                + "Timer: " + timer + "s                        \n\n"
+                + "Player 1 Hand:                               \n"
+                + str_player1_hand + "                          \n\n"
+                + "Player 2 Hand:                               \n"
+                + str_player2_hand + "                          \n\n"
+                + "Tiles on Board:                              \n"
+                + str_t_board + "                               \n\n"
+                + "Tiles in Pile:                               \n"
+                + str_t_pile;
+
+        return str_return;
+
     }
 
 
@@ -177,11 +182,11 @@ public class GameState {
     }
 
     public ArrayList<Tile> getT_pile() {
-        return tile_pile;
+        return t_pile;
     }
 
     public void setT_pile(ArrayList<Tile> t_pile) {
-        this.tile_pile = tile_pile;
+        this.t_pile = t_pile;
     }
 
 

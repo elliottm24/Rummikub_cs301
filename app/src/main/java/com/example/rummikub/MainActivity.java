@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 /**
- *@authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmestede
+ *@authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmstede
  *
  * (Description here)
  *

@@ -11,15 +11,14 @@ import java.util.ArrayList;
  *
  * */
 
-
 public class PlayerHand extends Tile {
-    public int p_id;
-    public ArrayList<Tile> hand;
+    private int p_id;
+    private ArrayList<Tile> hand;
 
     //constructor for PlayerHand
-    public PlayerHand() {
-        this.p_id     = 0;
-        this.hand     = null;
+    public PlayerHand(int init_id) {
+        this.p_id  = init_id;
+        hand = new ArrayList<Tile>();
     }
 
     //Deep copy constructor for PlayerHand
@@ -39,4 +38,5 @@ public class PlayerHand extends Tile {
 
         return str_hand;
     }
+
 }

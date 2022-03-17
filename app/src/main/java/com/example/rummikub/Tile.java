@@ -1,13 +1,18 @@
 package com.example.rummikub;
 
 /**
- *@authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmestede
+ *@authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmstede
  * */
 
-//Default constructor for Tile
 public class Tile {
-    public int color;
-    public int tileNum;
+    private int color;
+    private int tileNum;
+
+    //Default constructor for Tile
+    public Tile(int init_color, int init_tileNum) {
+        this.color = init_color;
+        this.tileNum = init_tileNum;
+    }
 
     //Copy constructor for Tile
     public Tile(Tile orig) {
