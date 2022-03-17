@@ -4,6 +4,11 @@ import android.graphics.Color;
 
 /**
  *@authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmestede
+ *
+ * (Description)
+ *
+ * Bugs:
+ *
  * */
 
 //Default constructor for Tile
