@@ -7,7 +7,7 @@ import android.graphics.Color;
  *
  * (Class Description)
  *
- * Bugs:
+ * Bugs: We have two tile constructors (3/17/2022)
  *
  * */
 

@@ -12,5 +12,9 @@ package com.example.rummikub;
  * */
 
 public class AI {
+    //Needs to be able to tell which AI is which
+    //Updates game and makes decisions (vary between AI)
+
+
 
 }

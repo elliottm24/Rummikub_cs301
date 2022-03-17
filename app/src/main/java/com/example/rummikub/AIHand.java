@@ -12,4 +12,5 @@ package com.example.rummikub;
  * */
 
 public class AIHand {
+
 }
