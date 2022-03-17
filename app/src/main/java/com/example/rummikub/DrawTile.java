@@ -10,7 +10,7 @@ import android.view.SurfaceView;
 /**
  *@authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmestede
  *
- * This class is designed to draw our Rummikub tiles
+ * This class is designed to draw our Rummikub tiles.
  *
  * Bugs:
  *
