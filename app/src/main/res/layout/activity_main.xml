@@ -7,10 +7,12 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
         android:gravity="right"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -27,7 +29,7 @@
                 android:text="Time:" />
 
             <View
-                android:id="@+id/view"
+                android:id="@+id/space"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
@@ -39,7 +41,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
                 android:layout_weight="0"
-                android:onClick="quitGame"
+                android:onClick="quit_game"
                 android:text="Quit"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
         </LinearLayout>
@@ -47,56 +49,75 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="fill_parent"
-            android:layout_weight="1"
+            android:layout_weight="100"
             android:gravity="fill_vertical"
             android:orientation="vertical">
 
+            <com.example.rummikub.RummiView
+                android:id="@+id/boardView"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="#AF0202" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="4dp"
-            android:layout_weight="0"
+            android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical">
-
-            <Button
-                android:id="@+id/button4"
-                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
-                android:layout_width="wrap_content"
-                android:layout_height="86dp"
-                android:layout_margin="0dp"
-                android:layout_weight="0"
-                android:maxWidth="2dp"
-                android:maxHeight="2dp"
-                android:text="+"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                android:translationX="-2dp" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <ImageButton
-                    android:id="@+id/imageButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0"
-                    app:srcCompat="@android:drawable/ic_menu_revert" />
+                android:orientation="vertical">
 
                 <Button
-                    android:id="@+id/button2"
-                    style="@android:style/Widget.Material.Button.Small"
+                    android:id="@+id/button4"
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_height="86dp"
                     android:layout_margin="0dp"
                     android:layout_weight="0"
-                    android:foregroundTint="#4CAF50"
-                    android:maxHeight="0dp"
-                    android:text="Done"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+                    android:maxWidth="2dp"
+                    android:maxHeight="2dp"
+                    android:text="+"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:translationX="12dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+                    <Button
+                        android:id="@+id/button2"
+                        style="@android:style/Widget.Material.Button.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="0dp"
+                        android:layout_weight="0"
+                        android:foregroundTint="#4CAF50"
+                        android:maxHeight="0dp"
+                        android:text="Done"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:orientation="horizontal">
+
             </LinearLayout>
 
         </LinearLayout>
