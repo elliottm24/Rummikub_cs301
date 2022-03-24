@@ -3,7 +3,7 @@ package com.example.rummikub;
 
 
 /**
- * @authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmestede
+ * @authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmstede
  * @version 3/17/2022
  *
  * Compiles AIs
