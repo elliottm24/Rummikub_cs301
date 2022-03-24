@@ -39,5 +39,4 @@ public class PlayerHand extends Tile {
 
         return str_hand;
     }
-
 }
