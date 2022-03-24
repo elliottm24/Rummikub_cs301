@@ -3,7 +3,7 @@ package com.example.rummikub;
 import java.util.ArrayList;
 
 /**
- * @authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmestede
+ * @authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmstede
  * @version 3/17/2022
  *
  * Handles all the data that has to do with a player's hand
