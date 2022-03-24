@@ -1,36 +1,42 @@
 package com.example.rummikub;
 
-import androidx.annotation.NonNull;
 import java.util.ArrayList;
 
 /**
  * @authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmstede
+ * @version 3/17/2022
+ *
+ * Handles all the data that has to do with a player's hand
+ *
+ * Bugs: Need to fix constructor and deep copy constructor (3/16/2022)
+ *
  * */
 
 public class PlayerHand extends Tile {
-    public int p_id;
-    public ArrayList<Tile> hand;
+    private int p_id;
+    private ArrayList<Tile> hand;
 
-    public PlayerHand(int init_id, ArrayList<Tile> init_hand) {
-        this.p_id     = init_id;
-        this.hand     = init_hand;
+    //constructor for PlayerHand
+    public PlayerHand(int init_id) {
+        this.p_id = init_id;
+        hand = new ArrayList<Tile>();
     }
 
+    //Deep copy constructor for PlayerHand
     public PlayerHand(PlayerHand orig) {
         this.p_id     = orig.p_id;
         this.hand     = orig.hand;
     }
 
-    @NonNull
     @Override
     public String toString(){
 
-        StringBuilder str_hand = new StringBuilder();
+        String str_hand = "";
 
         for(int i = 0; i < hand.size(); i++) {
-            str_hand.append(hand.get(i)).append("\n");
+            str_hand += hand.get(i) + "\n";
         }
 
-        return str_hand.toString();
+        return str_hand;
     }
 }

@@ -1,31 +1,37 @@
 package com.example.rummikub;
 
+import android.graphics.Color;
+
 /**
  * @authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmstede
+ * @version 3/17/2022
+ * (Class Description)
+ *
+ * Bugs: We have two tile constructors (3/17/2022)
+ *
  * */
 
 public class Tile {
-    public int color;
-    public int tileNum;
+    private int color;
+    private int tileNum;
 
-    public Tile(int initColor, int initTileNum) {
-        this.color = initColor;
-        this.tileNum = initTileNum;
+    //Default constructor for Tile
+    public Tile(int init_color, int init_tileNum) {
+        this.color = init_color;
+        this.tileNum = init_tileNum;
     }
 
-    public Tile() {
+    //Tile constructor
+    public Tile(){
+        this.color = Color.BLACK;
+        this.tileNum = 1;
     }
 
-    /**
-     * For some reason Dylan made a deep copy ctor for Tile
-     * May delete later?
-     *
-     *     public Tile(Tile orig) {
-     *         this.color = orig.color;
-     *         this.tileNum = orig.tileNum;
-     *     }
-     *
-    **/
+    //Copy constructor for Tile
+    public Tile(Tile orig) {
+        this.color = orig.color;
+        this.tileNum = orig.tileNum;
+    }
 
     @Override
     public String toString() {
