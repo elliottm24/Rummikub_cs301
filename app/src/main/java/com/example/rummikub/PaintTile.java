@@ -50,6 +50,7 @@ public class PaintTile extends SurfaceView {
     public void createTile(Canvas c){
         //Draws the tile (temp values change later)
         c.drawRect(100, 100, 100, 100, tilePaint);
+        c.drawText("12", 50, 50, numberPaint);
     }
 
     public void addNum(Canvas c){
