@@ -84,7 +84,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="0"
-                    app:srcCompat="@drawable/undo_symbol" />
+                    app:srcCompat="@android:drawable/ic_menu_revert" />
 
                 <Button
                     android:id="@+id/button2"
