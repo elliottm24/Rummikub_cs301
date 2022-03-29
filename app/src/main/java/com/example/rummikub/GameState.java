@@ -40,12 +40,12 @@ public class GameState {
     //This is the pile of tiles the players are gonna draw from
     private ArrayList<Tile> t_pile = new ArrayList<Tile>();
 
-
     public GameState() {
         curr_turn = 0;
         timer = 100;
 
     }
+
     //Copy Constructor I don't know if it's deep copy since the ArrayList aren't fully instantiated
     public GameState(GameState copy){
         this.curr_turn = copy.getCurr_turn();
@@ -95,7 +95,6 @@ public class GameState {
 
     }
 
-
     //Checks if either player hand is empty. This should be called at the end of each turn
     public boolean isWin(){
         if(player1_hand.isEmpty()){
@@ -130,16 +129,10 @@ public class GameState {
 
     // Helper method to change the turn of the player
     public void changeTurn(){
-        if (curr_turn == 0){
-            curr_turn = 1;
-            return;
-        }
-        if (curr_turn == 1){
-            curr_turn =0;
-            return;
-        }
-    }
+        if (curr_turn == 0) curr_turn = 1;
+        else curr_turn = 0;
 
+    }
 
     //Getters and Setters
     public int getCurr_turn() {

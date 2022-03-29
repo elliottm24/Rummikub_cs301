@@ -7,4 +7,10 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="rummikub_darkblue">#2C3493</color>
+    <color name="rummikub_lightblue">#29ABE2</color>
+    <color name="rummikub_orange">#FBB03B</color>
+    <color name="rummikub_red">#ED1C24</color>
+    <color name="rummikub_tile">#FAD3BB</color>
+    <color name="rummikub_tray">#AE9276</color>
 </resources>
