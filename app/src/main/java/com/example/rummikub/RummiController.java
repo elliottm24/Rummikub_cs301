@@ -8,8 +8,6 @@ import android.widget.CompoundButton;
  * @authors Jacob Arnez, Maja Elliott, Dylan Kim, Chase Ohmstede
  * @version 3/23/2022
  *
- *
- *
  * Bugs: Issues with GameState object. (3/23)
  *
  * */
@@ -17,10 +15,10 @@ import android.widget.CompoundButton;
 public class RummiController implements View.OnClickListener, CompoundButton.OnCheckedChangeListener, View.OnTouchListener{
     //Initializing RummiView and Gamestate objects
     private final RummiView rView;
-    private final Gamestate game;
+    private final GameState game;
 
     //Constructor
-    public RumiVontroller(RummiView view){
+    public RummiController(RummiView view){
         this.rView = view;
         this.game = view.getGameState();
     }
