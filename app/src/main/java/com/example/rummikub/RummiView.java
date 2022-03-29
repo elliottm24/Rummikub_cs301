@@ -89,8 +89,8 @@ public class RummiView extends SurfaceView {
         final float height = getHeight();
         final float width = getWidth();
 
-        final int rowCount      = 4;  //# of rows in grid
-        final int colCount      = 13; //# of cols in grid
+        final int rowCount      = 4;  // # of rows in grid
+        final int colCount      = 13; // # of cols in grid
 
         /*
           External Citation
